@@ -12,12 +12,12 @@ const Index = () => {
       <Passions />
       <Projects />
       <Contact />
-      
+
       {/* Footer */}
       <footer className="py-8 px-4 bg-background-dark border-t border-border">
         <div className="container mx-auto text-center">
           <p className="text-text-secondary">
-            © 2025 Tu Nombre. Todos los derechos reservados.
+            © 2025 José Andrés Echavarría Ríos. Todos los derechos reservados.
           </p>
         </div>
       </footer>

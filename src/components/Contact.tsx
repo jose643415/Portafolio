@@ -5,20 +5,17 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "tu.email@ejemplo.com",
-      href: "mailto:tu.email@ejemplo.com",
+      value: "joseechavarria0001@gmail.com",
     },
     {
       icon: Phone,
       label: "Teléfono",
-      value: "+1 234 567 890",
-      href: "tel:+1234567890",
+      value: "+57 315 793 9611",
     },
     {
       icon: MapPin,
       label: "Ubicación",
-      value: "Ciudad, País",
-      href: "#",
+      value: "Medellín, Colombia",
     },
   ];
 
@@ -34,8 +31,8 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-button mx-auto rounded-full" />
           <p className="text-text-secondary mt-6 text-lg max-w-2xl mx-auto">
-            ¿Tienes un proyecto en mente? Estoy disponible para nuevas oportunidades 
-            y colaboraciones. ¡No dudes en contactarme!
+            Estoy disponible para nuevas oportunidades siempre en pro del
+            crecimiento y aprendizaje. No dudes en contactarme.
           </p>
         </div>
 
@@ -44,14 +41,15 @@ const Contact = () => {
             {contactInfo.map((info, index) => (
               <a
                 key={index}
-                href={info.href}
                 className="flex items-center gap-6 p-6 rounded-lg border border-border bg-card hover:bg-secondary/50 hover:border-accent/50 transition-all group"
               >
                 <div className="p-4 rounded-lg bg-gradient-button">
                   <info.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <p className="text-sm text-text-secondary mb-1">{info.label}</p>
+                  <p className="text-sm text-text-secondary mb-1">
+                    {info.label}
+                  </p>
                   <p className="text-lg text-foreground font-medium group-hover:text-accent transition-colors">
                     {info.value}
                   </p>

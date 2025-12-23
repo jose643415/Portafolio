@@ -1,21 +1,23 @@
-import { Code2, Palette, Rocket } from "lucide-react";
+import { Brain, Code2, Rocket } from "lucide-react";
 
 const About = () => {
   const skills = [
     {
       icon: Code2,
       title: "Desarrollo",
-      description: "Experiencia en tecnologías modernas como React, TypeScript, Node.js y más.",
+      description:
+        "Experiencia en tecnologías modernas como Java Spring Boot, React, PostgreSQL y más.",
     },
     {
-      icon: Palette,
-      title: "Diseño",
-      description: "Creación de interfaces intuitivas y atractivas con enfoque en la experiencia del usuario.",
+      icon: Brain,
+      title: "Pensamiento Critico",
+      description:
+        "Analsis y resolucin de problemas complejos de manera eficiente entendiendo la necesidad del cliente.",
     },
     {
       icon: Rocket,
       title: "Innovación",
-      description: "Constante aprendizaje y aplicación de las últimas tendencias tecnológicas.",
+      description: "Aprendizaje continuo y adaptación a nuevas tecnologías",
     },
   ];
 
@@ -34,15 +36,26 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Soy un desarrollador apasionado por la tecnología y el diseño, con experiencia 
-              en la creación de aplicaciones web modernas y escalables. Mi enfoque se centra 
-              en escribir código limpio y crear experiencias que realmente importen.
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+              Soy estudiante de Ingeniería en sistemas orientado al desarrollo
+              de Software, actualmente en búsqueda de una práctica académica que
+              me permita fortalcer mis conocimientos técnicos y aportar valor al
+              equipo. Poseo experiencia en programación con Java, Spring Boot.
+              HTML, CSS, JavaScript y Python, ademas de manejo de bases de datos
+              PostgreSQL. Me caracterizo por mi liderazgo, compromiso y
+              facilidad para trabajar en equipo. Tengo una gran pasión por
+              aprender nuevas tecnologías y adaptarme a entornos dinámicos de
+              desarrollo.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              A lo largo de mi trayectoria, he trabajado en diversos proyectos que me han 
-              permitido desarrollar habilidades tanto en el frontend como en el backend, 
-              siempre buscando la excelencia en cada línea de código.
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+              He tenido la oportunidad de apoyar proyectos que me han permitido
+              desarrollar habilidades orientadas al desarrollo Backend y el
+              liderazgo de equipos de desarrollo.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+              Adicionalmente cuento con experiencia laboral como backoffice
+              administrativo donde realice procesos de análisis de datos y
+              auditoria de PQRS dentro de la organización.
             </p>
           </div>
 

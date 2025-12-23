@@ -1,23 +1,32 @@
-import { Heart, Music, Camera, Gamepad2, BookOpen, Coffee, Dumbbell, Plane } from "lucide-react";
+import {
+  Heart,
+  Music,
+  Gamepad2,
+  BookOpen,
+  Coffee,
+  Dumbbell,
+  Globe,
+} from "lucide-react";
 
 const Passions = () => {
   const passions = [
     { icon: Music, label: "Música" },
-    { icon: Camera, label: "Fotografía" },
     { icon: Gamepad2, label: "Videojuegos" },
     { icon: BookOpen, label: "Lectura" },
     { icon: Coffee, label: "Café" },
     { icon: Dumbbell, label: "Fitness" },
-    { icon: Plane, label: "Viajar" },
+    { icon: Globe, label: "Idiomas" },
   ];
 
   const skills = [
-    { name: "React / TypeScript", level: 90 },
-    { name: "Node.js", level: 85 },
-    { name: "CSS / Tailwind", level: 88 },
-    { name: "Bases de Datos", level: 80 },
-    { name: "Git / DevOps", level: 75 },
-    { name: "Diseño UI/UX", level: 70 },
+    { name: "React / TypeScript", level: 80 },
+    { name: "Java / Spring Boot", level: 85 },
+    { name: "CSS / Tailwind", level: 80 },
+    { name: "Bases de Datos", level: 85 },
+    { name: "Git / DevOps", level: 85 },
+    { name: "Agile", level: 80 },
+    { name: "DevOps", level: 70 },
+    { name: "Python / Machine Learning", level: 80 },
   ];
 
   return (
@@ -55,13 +64,17 @@ const Passions = () => {
 
           {/* Habilidades */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Habilidades Técnicas</h3>
+            <h3 className="text-2xl font-semibold mb-6">
+              Habilidades Técnicas
+            </h3>
             <div className="space-y-4">
               {skills.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-2">
                     <span className="font-medium">{skill.name}</span>
-                    <span className="text-muted-foreground">{skill.level}%</span>
+                    <span className="text-muted-foreground">
+                      {skill.level}%
+                    </span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full overflow-hidden">
                     <div
