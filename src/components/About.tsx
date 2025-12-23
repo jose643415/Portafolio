@@ -12,7 +12,7 @@ const About = () => {
       icon: Brain,
       title: "Pensamiento Critico",
       description:
-        "Analsis y resolucin de problemas complejos de manera eficiente entendiendo la necesidad del cliente.",
+        "Analisis y resolucion de problemas complejos de manera eficiente entendiendo la necesidad del cliente.",
     },
     {
       icon: Rocket,
