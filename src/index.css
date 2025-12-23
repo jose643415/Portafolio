@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark background: #0B1F30 */
+    --background-dark: 204 62% 11%;
+    /* Background: #15293A */
+    --background: 204 45% 15%;
+    --foreground: 0 0% 100%;
+
+    /* Card using main background */
+    --card: 204 45% 15%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 204 45% 15%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Buttons Gradient start: #147B9D */
+    --primary: 193 75% 35%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Buttons Gradient end: #2BC398 */
+    --primary-end: 163 66% 46%;
+
+    /* Rate gradient start: #2BC398 */
+    --accent: 163 66% 46%;
+    /* Rate gradient end: #2497F9 */
+    --accent-end: 206 94% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Secondary background slightly lighter */
+    --secondary: 204 50% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Gris claro: #9FBBCD */
+    --muted: 204 45% 18%;
+    --muted-foreground: 204 33% 71%;
+
+    /* Gris cielo: #658CA7 */
+    --text-secondary: 204 28% 53%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 204 40% 25%;
+    --input: 204 40% 20%;
+    --ring: 163 66% 46%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-button: linear-gradient(135deg, hsl(193, 75%, 35%), hsl(163, 66%, 46%));
+    --gradient-rate: linear-gradient(135deg, hsl(163, 66%, 46%), hsl(206, 94%, 55%));
+    --gradient-hero: linear-gradient(180deg, hsl(204, 62%, 11%), hsl(204, 45%, 15%));
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
