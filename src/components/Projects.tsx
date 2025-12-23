@@ -12,7 +12,8 @@ const Projects = () => {
         "Modelo de inteligencia artificial para predecir indicadores de salud relacionados con la diabetes utilizando Python y Scikit-Learn.",
       tags: ["Python", "Machine Learning", "Scikit-Learn.", "Data Analysis"],
       image: diabetesImage,
-      githubUrl: "https://github.com/tu-usuario/proyecto1",
+      githubUrl:
+        "https://github.com/jose643415/Diabetes-Health-Indicators-predictions",
       //demoUrl: "https://tu-demo.com",
       gradient: "from-primary to-primary-end",
     },
@@ -22,7 +23,7 @@ const Projects = () => {
         "Sitio web personal para mostrar proyectos y habilidades, construido con React y Tailwind CSS.",
       tags: ["React", "Vite", "Tailwind CSS", "TypeScript"],
       image: portafolioImage,
-      githubUrl: "https://github.com/tu-usuario/proyecto2",
+      githubUrl: "https://github.com/jose643415/Portafolio",
       //demoUrl: "https://tu-portafolio.com",
       gradient: "from-accent-end to-primary",
     },
